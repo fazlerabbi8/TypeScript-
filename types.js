@@ -15,4 +15,20 @@ const user = {
     age: 23,
 };
 user.email = 'rabbi@gmail.com';
+const user1 = {
+    name: 'ali',
+    age: 28
+};
+user1.email = 'ali@gmail.com';
+const productData = {
+    name: "phone",
+    price: 200000,
+};
+const productWithColor = {
+    name: "phone",
+    price: 200000,
+    color: "silver",
+};
+productData.discount = 5;
+const product = productData;
 export {};
