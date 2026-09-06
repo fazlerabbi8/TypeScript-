@@ -41,5 +41,5 @@ function getFirstChar(item) {
     return item.charAt(0);
 }
 const fstr = getFirstChar("hello");
-console.log(fstr);
 export {};
+// console.log(fstr)

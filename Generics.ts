@@ -62,4 +62,4 @@ function getFirstChar<T extends { charAt: (index: number) => string }>(
 }
 
 const fstr = getFirstChar("hello");
-console.log(fstr)
+// console.log(fstr)
