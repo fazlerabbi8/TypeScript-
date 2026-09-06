@@ -44,14 +44,14 @@ const user1: User = {
 
 user1.email = 'ali@gmail.com';
 
+
+// example(TypeScript is stricter about object literals typed directly, but relaxed when the same shape comes in through a variable)
 interface Product {
   name: string;
   price: number;
   discount?: number;
 }
 
-
-// example(TypeScript is stricter about object literals typed directly, but relaxed when the same shape comes in through a variable)
 const productData: Product = {
   name: "phone",
   price: 200000,
