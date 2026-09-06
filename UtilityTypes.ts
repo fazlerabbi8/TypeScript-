@@ -52,3 +52,19 @@ type Inventory = Record<string, number>;
 //   vendor: ["read", "write"],
 //   customer: ["read"],
 // };
+
+
+
+
+
+//another practice ecample 
+
+
+// 1.Create a type ProductSummary using Pick that only has name and stock.
+// 2.Create a type ProductWithoutStock using Omit that has everything except stock.
+// 3.Create a Record type called ProductCatalog that maps string product IDs to Product objects.
+type ProductSummary = Pick<Product, "name" | "stock">;
+type ProductWithoutStock = Omit<Product, "stock">
+type ProductCatalog = Record<string, Product>
+
+
