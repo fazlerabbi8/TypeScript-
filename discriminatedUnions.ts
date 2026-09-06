@@ -55,6 +55,7 @@ type Order = PendingOrder | ShippedOrder | CancelledOrder | RefundedOrder;
 // describeOrder({status: "shipped", trackingNumber:'123gdfshgsh'})
 // describeOrder({status: "cancelled", cancelReason:'dont fine'})
 
+
 // exhaustiveness checking. What if someone adds a new order status later ("refunded") and forgets to handle it somewhere?
 
 function describeOrderTwo(order: Order): string {
@@ -71,9 +72,9 @@ function describeOrderTwo(order: Order): string {
   }
 
   //   what if refunded is missing
-  if (order.status === "refunded") {
-    return `Refunded amount: ${order.refundAmount}`;
-  }
+//   if (order.status === "refunded") {
+//     return `Refunded amount: ${order.refundAmount}`;
+//   }
 
   throw new Error("Unhandled order status");
 }
