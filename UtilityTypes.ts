@@ -28,7 +28,7 @@ type ProductPreview = Pick<Product, "name" | "price">;
 
 // Omit<T, Keys> — the opposite: exclude some fields
 
-// type newProduct = Omit<Product, "id">;
+type newProduct = Omit<Product, "id">;
 // equivalent to: { name: string; price: number; stock: number }
 
 
