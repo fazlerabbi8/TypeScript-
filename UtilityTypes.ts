@@ -34,7 +34,7 @@ type newProduct = Omit<Product, "id">;
 
 //Record<Keys, ValueType> — build an object type: object where every key is a specific set of strings, and every value is the same type.
 
-// type Inventory = Record<string, number>;
+type Inventory = Record<string, number>;
 
 // const stock: Inventory = {
 //     "prod-1": 50,
