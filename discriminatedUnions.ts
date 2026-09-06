@@ -136,5 +136,9 @@ function getPaymentSummary(payment: Payment): string {
     throw new Error("Unhandled payment status");
 }
 
-const s = getPaymentSummary({status: 'success', transactionId: 'tra123'});
-console.log(s)
+// const s = getPaymentSummary({status: 'success', transactionId: 'tra123'});
+// console.log(s)
+
+
+
+
