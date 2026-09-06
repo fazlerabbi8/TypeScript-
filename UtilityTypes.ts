@@ -23,7 +23,7 @@ updateProduct('123', {price: 100});
 
 // Pick<T, Keys> — select only some fields
 
-// type ProductPreview = Pick<Product, "name" | "price">;
+type ProductPreview = Pick<Product, "name" | "price">;
 
 
 // Omit<T, Keys> — the opposite: exclude some fields
