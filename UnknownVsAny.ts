@@ -8,3 +8,5 @@ function safeUpperCase(value: unknown){
 
 const checkUpper = safeUpperCase('hello');
 console.log(checkUpper)
+
+
