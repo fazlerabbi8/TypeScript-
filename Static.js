@@ -12,3 +12,18 @@ class Product {
 const phone = new Product("Phone", 500);
 const laptop = new Product("Laptop", 1000);
 console.log(Product.totalProductsCreated);
+// Static methods
+class Product1 {
+    name;
+    price;
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+    static fromApiResponse(data) {
+        return new Product1(data.name, data.price);
+    }
+}
+const apiData = { name: "Tablet", price: 300 };
+const product = Product1.fromApiResponse(apiData);
+console.log(product.name);
